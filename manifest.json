@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "HoldMySession",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Reserve your computer while you step away",
   "permissions": ["storage", "windows"],
   "background": {
