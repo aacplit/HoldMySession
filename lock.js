@@ -1,4 +1,4 @@
-const EXTENSION_ID = 'dkipjjoajongdbkbnegkaghhlckbkpke';
+const EXTENSION_ID = 'ahhafdnhbgogcocbeckccljlagddfkla';
 
 async function hashPin(pin) {
   const encoder = new TextEncoder();
