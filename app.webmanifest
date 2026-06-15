@@ -1,0 +1,14 @@
+{
+  "name": "HoldMySession",
+  "short_name": "Lock",
+  "description": "Lock this computer while you step away",
+  "icons": [
+    { "src": "icons/16.png",  "sizes": "16x16",   "type": "image/png" },
+    { "src": "icons/32.png",  "sizes": "32x32",   "type": "image/png" },
+    { "src": "icons/48.png",  "sizes": "48x48",   "type": "image/png" },
+    { "src": "icons/128.png", "sizes": "128x128", "type": "image/png" }
+  ],
+  "display": "standalone",
+  "background_color": "#0a0a1a",
+  "theme_color": "#0a0a1a"
+}
