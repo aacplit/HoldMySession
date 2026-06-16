@@ -13,13 +13,6 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   }
 });
 
-chrome.runtime.onMessageExternal.addListener((message, sender, sendResponse) => {
-  if (message.type === 'LOCK') {
-    handleLock(message.pinHash).then(sendResponse);
-    return true;
-  }
-});
-
 async function handleLock(pinHash) {
   const existing = await chrome.storage.session.get('lockoutWindowId');
   if (existing.lockoutWindowId != null) {

@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "HoldMySession",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Reserve your computer while you step away",
   "permissions": ["storage", "windows"],
   "background": {
@@ -22,7 +22,8 @@
     "48": "icons/48.png",
     "128": "icons/128.png"
   },
-  "externally_connectable": {
+  "web_accessible_resources": [{
+    "resources": ["page.html"],
     "matches": ["https://aacplit.github.io/*"]
-  }
+  }]
 }
