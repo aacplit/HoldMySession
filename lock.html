@@ -2,12 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>HoldMySession</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HoldMySession — Lock Computer</title>
   <link rel="manifest" href="app.webmanifest">
   <link rel="icon" href="icons/128.png" type="image/png">
-  <script>
-    window.location.replace('chrome-extension://ahhafdnhbgogcocbeckccljlagddfkla/page.html');
-  </script>
+  <link rel="stylesheet" href="lock.css">
 </head>
-<body></body>
+<body>
+  <div class="container">
+    <div class="lock-icon">🔒</div>
+    <h1>HoldMySession</h1>
+    <p class="instructions">
+      Need to step away for a few minutes?<br>
+      Enter a 4-digit PIN to lock this computer.<br>
+      You'll need it to unlock when you return.
+    </p>
+    <div class="pin-inputs">
+      <input type="password" inputmode="numeric" maxlength="1" class="pin-box" id="pin0" autocomplete="off">
+      <input type="password" inputmode="numeric" maxlength="1" class="pin-box" id="pin1" autocomplete="off">
+      <input type="password" inputmode="numeric" maxlength="1" class="pin-box" id="pin2" autocomplete="off">
+      <input type="password" inputmode="numeric" maxlength="1" class="pin-box" id="pin3" autocomplete="off">
+    </div>
+    <p class="status" id="status"></p>
+  </div>
+  <script src="lock.js"></script>
+</body>
 </html>
